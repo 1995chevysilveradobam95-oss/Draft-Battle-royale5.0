@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Battle Royale of Shame</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <h1>Battle Royale of Shame</h1>
+    <p class="sub">Mad-Max-meets-Hunger-Games. Dark. Gritty. Random. </p>
+  </header>
+
+  <main class="wrap">
+    <!-- Arena grid -->
+    <section class="panel">
+      <h2>Arena</h2>
+      <div id="arena" class="grid"></div>
+      <div class="controls">
+        <button id="speedBtn" title="Toggle speed">Speed: Normal</button>
+        <button id="resetBtn" class="danger" title="Restart run">Reset</button>
+      </div>
+    </section>
+
+    <!-- Log + Standings -->
+    <section class="panel">
+      <h2>Kill Log</h2>
+      <div id="log" class="log" aria-live="polite"></div>
+
+      <div class="final" id="finalBoard" hidden>
+        <h3>Final Rankings</h3>
+        <ol id="rankList" class="rankList"></ol>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <small>Eliminations are automatic & random. 10th = first eliminated, 1st = winner.</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
